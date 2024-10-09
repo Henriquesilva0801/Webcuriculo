@@ -29,8 +29,9 @@ body {
 
 /* Container geral */
 .container {
-    width: 80%;
-    margin: 20px auto;
+    max-width: 800px;
+    margin: auto;
+    margin-top: 2%;
     background: linear-gradient(90deg, black, var(--color-background),var(--color-degrade)); /* Gradiente com a nova cor */
     padding: 20px;
     border-radius: 8px;
