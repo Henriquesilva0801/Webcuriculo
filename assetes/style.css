@@ -1,6 +1,6 @@
 /* Variáveis para paleta de cores */
 :root {
-    --color-primary: #396EB8;  
+    --color-primary:  #396EB8; 
     --color-secondary: #43628E; 
     --color-accent: #2071E3; 
     --color-background: #2A2E33; 
@@ -20,8 +20,7 @@
 /* Definindo corpo */
 body {
     font-family: Arial, sans-serif;
-    background-image: url(img/2.jpg);
-    background-repeat: repeat;
+    background-image: url(img/3.png);
     background-color: var(--color-background);
     color: var(--color-text);
     line-height: 1.6;
@@ -31,11 +30,12 @@ body {
 .container {
     max-width: 800px;
     margin: auto;
-    margin-top: 2%;
-    background: linear-gradient(90deg, black, var(--color-background),var(--color-degrade)); /* Gradiente com a nova cor */
+    margin-top: 1%;
+    background: linear-gradient(90deg, black, rgba(0, 0, 0, 0.5));
+    /* background: linear-gradient(90deg, black, var(--color-background),var(--color-degrade));  */
     padding: 20px;
     border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.5);
 }
 
 /* Estilos do cabeçalho */
@@ -52,10 +52,12 @@ header h1 {
 
 /* Seção de contatos */
 .contact-info {
-    background-image: linear-gradient(90deg, var(--color-subsection-bg), transparent, rgba(0, 0, 0, 0.1));
+    background: linear-gradient(90deg, rgba(125, 125, 125, 0.1),transparent );
+    /* background-image:  linear-gradient(90deg, var(--color-subsection-bg), transparent, rgba(0, 0, 0, 0.1)); */
     padding: 15px;
     border-radius: 5px;
     margin-bottom: 10px;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.5);
 }
 
 .contact-info h2 {
@@ -95,13 +97,20 @@ section h2 {
 
 section ul {
     list-style-type: none;
+    margin-left: 20px;
 }
 
 section ul li {
-    background-image: linear-gradient(90deg, var(--color-subsection-bg), transparent, rgba(0, 0, 0, 0.1));
-    padding: 10px;
+    display: inline-block;
+    min-width: 300px;
+    background-color: rgba(125, 125, 125, 0.1);
+    /* background-image: linear-gradient(90deg, var(--color-subsection-bg), transparent, rgba(0, 0, 0, 0.1)); */
+    padding: 20px;
     border-radius: 5px;
     margin-bottom: 10px;
+    margin-right: 10px;
+    
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.5);
 }
 
 /* Estilos para a foto de perfil */
